@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    
+
+    <div class="plane">
+   
+      <div class="row">
+        <div class="seat unavailable" id="seat1"  onclick="selectSeat(this)"></div>
+        <div class="seat unavailable" id="seat2"  onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat unavailable" id="seat3"  onclick="selectSeat(this)"></div>
+        <div class=" seat unavailable" onclick="selectSeat(this)"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="seat unavailable" onclick="selectSeat(this)"  ></div>
+        <div class="seat unavailable" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat unavailable" onclick="selectSeat(this)"></div>
+        <div class="seat unavailable" onclick="selectSeat(this)"></div>
+      </div>
+     
+      <div class="row">
+        <div class="seat unavailable" onclick="selectSeat(this)"></div>
+        <div class="seat unavailable" onclick="selectSeat(this)" ></div>
+        <div class="corridor"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+      </div>
+     
+      <div class="row">
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat available " onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+      </div>
+     
+      <div class="row">
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+      </div>
+     
+      <div class="row">
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+      </div>
+      
+      <div class="row">
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+      </div>
+    
+      <div class="row">
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+      </div>
+   
+      <div class="row">
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+      </div>
+    
+      <div class="row">
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+      </div>
+   
+      <div class="row">
+        <div class="seat available" onclick="selectSeat(this)" ></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+      </div>
+  
+      <div class="row">
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+      </div>
+ 
+      <div class="row">
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+      </div>
+   
+      <div class="row">
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+      </div>
+      
+      <div class="row">
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="corridor"></div>
+        <div class="seat available" onclick="selectSeat(this)"></div>
+        <div class="seat available"onclick="selectSeat(this)"></div>
+      </div>
+     
+      
+        <div class="infoBoxes">
+          <div>
+            <div class="infoBox grey">
+            </div>
+            <p>Dolu</p>
+          </div>
+
+          <div>
+            <div class="infoBox yellow">
+            </div>
+            <p>Seçili</p>
+          </div>
+          <div>
+            <div class="infoBox white">
+            </div>
+            <p>Boş</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-container ">
+      <button id="toggleButton">
+        <i id="icon" class="fa-solid fa-angle-down icon " style="float: right;"></i> 1.yolcu
+    </button>
+      <div class="form-section" id="passenger-details1">
+ 
+        <div class="input-row">
+          <div class="input-group">
+              <label for="name">Isim</label>
+              <input type="text" id="name1" placeholder="" required>
+          </div>
+          <div class="input-group">
+              <label for="Soyisim">SoyIsım:</label>
+              <input type="text" id="Soyisim1" placeholder="" required>
+          </div>
+      </div>
+
+     
+        <div class="input-row">
+            <div class="input-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone1" placeholder="" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-posta:</label>
+                <input type="email" id="email1" placeholder="" required>
+            </div>
+        </div>
+
+      
+        <div class="input-row">
+            <div class="input-group">
+                <label for="gender">Cinsiyet:</label>
+                <select id="gender1" required>
+                    <option value=""  selected></option>
+                    <option value="male">Erkek</option>
+                    <option value="female">Kadın</option>
+                    <option value="other">Diğer</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="dob">Doğum Tarihi:</label>
+                <input type="date" id="dob1" required>
+            </div>
+        </div>
+      </div>
+        <button id="toggleButton2">
+          <i id="icon" class="fa-solid fa-angle-down icon " style="float: right;"></i> 2.yolcu
+      </button>
+      <div class="form-section" id="passenger-details2">
+ 
+        <div class="input-row">
+          <div class="input-group">
+              <label for="name">Isim</label>
+              <input type="text" id="name2" placeholder="" required>
+          </div>
+          <div class="input-group">
+              <label for="Soyisim">SoyIsım:</label>
+              <input type="text" id="Soyisim2" placeholder="" required>
+          </div>
+      </div>
+
+   
+        <div class="input-row">
+            <div class="input-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone2" placeholder="" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-posta:</label>
+                <input type="email" id="email2" placeholder="" required>
+            </div>
+        </div>
+
+       
+        <div class="input-row">
+            <div class="input-group">
+                <label for="gender2">Cinsiyet:</label>
+                <select id="gender" required>
+                    <option value=""  selected></option>
+                    <option value="male">Erkek</option>
+                    <option value="female">Kadın</option>
+                    <option value="other">Diğer</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="dob">Doğum Tarihi:</label>
+                <input type="date" id="dob2" required>
+            </div>
+        </div>
+        </div>
+
+
+        <button id="toggleButton3">
+          <i id="icon" class="fa-solid fa-angle-down icon " style="float: right;"></i> 3.yolcu
+      </button>
+      <div class="form-section" id="passenger-details3">
+     
+        <div class="input-row">
+          <div class="input-group">
+              <label for="name">Isim</label>
+              <input type="text" id="name3" placeholder="" required>
+          </div>
+          <div class="input-group">
+              <label for="Soyisim">SoyIsım:</label>
+              <input type="text" id="Soyisim3" placeholder="" required>
+          </div>
+      </div>
+
+       
+        <div class="input-row">
+            <div class="input-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone3" placeholder="" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-posta:</label>
+                <input type="email" id="email3" placeholder="" required>
+            </div>
+        </div>
+
+   
+        <div class="input-row">
+            <div class="input-group">
+                <label for="gender">Cinsiyet:</label>
+                <select id="gender3" required>
+                    <option value=""  selected></option>
+                    <option value="male">Erkek</option>
+                    <option value="female">Kadın</option>
+                    <option value="other">Diğer</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="dob">Doğum Tarihi:</label>
+                <input type="date" id="dob2" required>
+            </div>
+        </div>
+        </div>
+        <div id="message" class="message"></div>
+    <button id="completeButton2" type="submit">İşlemi Tamamla</button>
+       <div class="totalInfo" > 
+        <div id="totalCost"><p>0 TL</p>
+        </div>
+       </div>
+</form>
+
+<script src="app.js"></script>
+  </body>
+</html>
